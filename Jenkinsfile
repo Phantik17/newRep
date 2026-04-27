@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/Phantik17/jenkins-demo.git', branch: 'main'
+                git url: 'https://github.com/Phantik17/newRep.git', branch: 'main'
             }
         }
         stage('Install') {
