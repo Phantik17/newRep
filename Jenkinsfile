@@ -8,12 +8,12 @@ pipeline {
         }
         stage('Install') {
             steps {
-                bat 'py -m pip install -r requirements.txt'
+                bat 'C:\\Users\\miran\\AppData\\Local\\Programs\\Python\\Python311\\python.exe -m pip install -r requirements.txt'
             }
         }
         stage('Test') {
             steps {
-                bat 'py -m pytest'
+                bat 'C:\\Users\\miran\\AppData\\Local\\Programs\\Python\\Python311\\python.exe -m pytest'
             }
         }
     }
