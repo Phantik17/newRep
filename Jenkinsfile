@@ -3,17 +3,17 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/Phantik17/newRep.git', branch: 'main'
+                git url: 'https://github.com/Phantik17/newRep', branch: 'main'
             }
         }
         stage('Install') {
             steps {
-                bat 'pip install -r requirements.txt'
+                bat 'python -m pip install -r requirements.txt'
             }
         }
         stage('Test') {
             steps {
-                bat 'pytest'
+                bat 'python -m pytest'
             }
         }
     }
